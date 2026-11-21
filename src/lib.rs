@@ -6,6 +6,9 @@
 #![forbid(unsafe_code)]
 #![warn(missing_docs)]
 
+/// Webcam management module (V4L2).
+pub mod sigmawebcam;
+
 /// Errors raised by this component.
 #[derive(Debug, thiserror::Error)]
 pub enum ComponentError {
